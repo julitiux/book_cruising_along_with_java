@@ -13,7 +13,7 @@ public class GenericsTypeWitness {
   public static void main(String[] args) {
 
     GenericsTypeWitness instance = new GenericsTypeWitness();
-    instance.process(input -> display(input)); // ERROR
+    instance.<Integer>process(input -> display(input)); // ERROR
     //ERROR: incompatible types: Object cannot be converted to int
   }
 }
