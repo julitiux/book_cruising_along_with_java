@@ -8,4 +8,7 @@ public class GenericsTypeInference {
   List<String> justOne = Collections.singletonList("howdy");
   List<String> nothingHere = Collections.emptyList();
 
+  // Redundant TypeWitness
+  List<Integer> nothingHereToo = Collections.<Integer>emptyList();
+
 }
