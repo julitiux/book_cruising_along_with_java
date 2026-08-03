@@ -11,5 +11,9 @@ public class Diamond {
 
   Map<String, List<Integer>> score = new HashMap<>(){
 
+    {
+      System.out.println("print !!");
+    }
+
   };
 }
