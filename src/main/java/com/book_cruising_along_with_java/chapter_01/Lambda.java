@@ -8,6 +8,7 @@ public class Lambda {
 
   public void print() {
 
-    numbers.forEach((Integer number) -> System.out.println(number * 2));
+//    numbers.forEach((Integer number) -> System.out.println(number * 2));
+    numbers.forEach((number) -> System.out.println(number * 2));
   }
 }
