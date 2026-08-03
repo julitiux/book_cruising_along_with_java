@@ -10,6 +10,7 @@ public class Lambda {
 
 //    numbers.forEach((Integer number) -> System.out.println(number * 2));
 //    numbers.forEach((number) -> System.out.println(number * 2));
-    numbers.forEach(number -> System.out.println(number * 2));
+//    numbers.forEach(number -> System.out.println(number * 2));
+    numbers.forEach((@NotNull number) -> System.out.println(number * 2)); // Error
   }
 }
