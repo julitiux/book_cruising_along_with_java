@@ -1,7 +1,8 @@
 package com.book_cruising_along_with_java.chapter_01;
 
-import java.util.Comparator;
 import java.util.List;
+
+import static java.util.Comparator.comparing;
 
 public class LambdaTypeInferenceFail {
 
@@ -10,7 +11,7 @@ public class LambdaTypeInferenceFail {
   public void printLanguages() {
 
     languages.stream()
-      .sorted(Comparator.comparing(name -> name.length()))
+      .sorted(comparing(name -> name.length()))
       .forEach(System.out::println);
   }
 }
