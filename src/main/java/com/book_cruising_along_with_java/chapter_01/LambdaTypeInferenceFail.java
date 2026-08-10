@@ -11,8 +11,7 @@ public class LambdaTypeInferenceFail {
   public void printLanguages() {
 
     languages.stream()
-      //ERROR: cannot find the symbol length() on variable name of type Object
-      .sorted(comparing(name -> name.length()).reversed())
+      .sorted(comparing((String name) -> name.length()).reversed())
       .forEach(System.out::println);
   }
 }
