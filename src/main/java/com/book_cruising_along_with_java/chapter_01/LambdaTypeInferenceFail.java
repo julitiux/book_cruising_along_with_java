@@ -11,7 +11,7 @@ public class LambdaTypeInferenceFail {
   public void printLanguages() {
 
     languages.stream()
-      .sorted(comparing((String name) -> name.length()).reversed())
+      .sorted(comparing(String::length).reversed())
       .forEach(System.out::println);
   }
 }
